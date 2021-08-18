@@ -1,0 +1,43 @@
+:root {
+	--main-color: hsl(0, 100%, 50%);
+	--bg-color: rgba(0, 0, 0, .3);
+}
+ body {
+	background: url('./assets/bg.jpg');
+	color: var(--main-color);
+	text-shadow: 0 0 6px black;
+}
+#app {
+	input, button {
+		padding: 10px;
+		border-radius: 5px;
+	}
+	button {
+		background-color: var(--main-color);
+		color: white;
+		border: none;
+		cursor: pointer;
+		transition: box-shadow 0.2s ease-in;
+		text-shadow: 0 0 6px black;
+	}
+	button:hover {
+		box-shadow: 2px 2px 0 grey;
+	}
+	font-family: 'Avenir', Helvetica, Arial, sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	text-align: center;
+	margin-top: 60px;
+	background-color: var(--bg-color);
+	padding: 20px 10px;
+	max-width: 450px;
+	margin: 80px auto;
+	border-radius: 5px;
+	border: 1px solid grey;
+}
+.fade-enter-active, .fade-leave-active {
+	transition: opacity .9s;
+}
+.fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
+	opacity: 0;
+}
